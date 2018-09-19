@@ -20,6 +20,8 @@ To run this image:
 docker run -it --rm --name my-genie nleiva/xr-genie
 ```
 
+**NOTE**: They keep an official Cisco pyATS Docker image at https://hub.docker.com/r/ciscotestautomation/pyats/.
+
 ## IOS XR examples
 
 ### Running Python and importing requiered libraries
@@ -27,8 +29,10 @@ docker run -it --rm --name my-genie nleiva/xr-genie
 Once you are in the container, run the Python interpreter (interactive mode) to get immediate feedback for each statement.
 
 ```bash
-$ docker run -it --rm --name my-genie nleiva/xr-genie:1.0
+$ docker run -it --rm --name my-genie nleiva/xr-genie
 root@9423f2d426d0:/# python
+```
+```python
 Python 3.6.6 (default, Sep  5 2018, 03:51:50)
 [GCC 4.9.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
