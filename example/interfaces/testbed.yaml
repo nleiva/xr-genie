@@ -1,0 +1,23 @@
+testbed:
+    name: 'testing'
+
+devices:
+    xrv9k:
+        type: "IOS-XRv 9000"
+        os: "iosxr"
+        alias: uut
+        tacacs:
+            login_prompt: 'User:'
+            password_prompt: 'Password:'
+            username: cisco
+        passwords:
+            tacacs: cisco
+            enable: cisco
+            line: cisco
+        connections:
+            vty:
+                protocol: ssh
+                ip: 10.87.89.111
+        custom:
+            abstraction:
+                order: [os, type]
