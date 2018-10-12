@@ -12,12 +12,5 @@ COPY . .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install IOS XR Genie parser
-RUN  \
-  pip uninstall -y genie.libs.parser && \
-  git clone https://github.com/CiscoTestAutomation/genieparser.git && \
-  cd genieparser && \
-  make develop
-
 # Define default command.
 CMD ["bash"]
