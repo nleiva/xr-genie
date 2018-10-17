@@ -1,5 +1,7 @@
 # xr-genie
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/nleiva/xr-genie)
+
 Getting started with [Genie](https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/index.html)/[pyATS](https://developer.cisco.com/site/pyats/) and IOS XR
 
 ## Running Genie/pyATS in a container
