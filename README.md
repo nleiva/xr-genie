@@ -26,7 +26,7 @@ docker run -it --rm --name my-genie nleiva/xr-genie
 
 ## IOS XR examples
 
-### Running Python and importing requiered libraries
+### Running Python and importing required libraries
 
 Once you are in the container, run the Python interpreter (interactive mode) to get immediate feedback for each statement.
 
@@ -41,7 +41,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Import libraries requiered.
+Import libraries required.
 
 ```python
 from ats.topology import loader
