@@ -1,2 +1,2 @@
-pyats
+pyats[library]
 genie

@@ -2,22 +2,17 @@ testbed:
     name: 'testing'
 
 devices:
-    xrv9k:
+    iosxr1:
         type: "IOS-XRv 9000"
         os: "iosxr"
-        alias: uut
-        tacacs:
-            login_prompt: 'User:'
-            password_prompt: 'Password:'
-            username: cisco
-        passwords:
-            tacacs: cisco
-            enable: cisco
-            line: cisco
+        credentials:
+            default:
+                username: admin
+                password: C1sco12345
         connections:
             vty:
                 protocol: ssh
-                ip: 10.87.89.111
+                ip: sandbox-iosxr-1.cisco.com
         custom:
             abstraction:
                 order: [os, type]
